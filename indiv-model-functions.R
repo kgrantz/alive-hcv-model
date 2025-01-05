@@ -7,7 +7,7 @@ library(lubridate)
 library(glue)
 library(lcmm)
 library(truncnorm)
-# library(arrow)
+library(arrow)
 
 ## ................................................
 ## DEMOGRAPHY FUNCTIONS........................####
@@ -36,7 +36,7 @@ make_individuals <- function(n, t, starting_id,
                              class_probs=classes, 
                              age_class=age_enrol, 
                              age_idu_class=age_idu, 
-                             hcv_class=hcv_prev, 
+                             hcv_class=hcv_prev_scaled, 
                              hcv_vir_pr=hcv_vir_prob,
                              hcv_age_prm=hcv_age_param,
                              age_brks=age_breaks, 
